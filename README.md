@@ -22,7 +22,7 @@ than from someone who is just getting started.
 - If there's something unclear, make a quick call to `0170 3800 460` to get everything sorted
 out.
 - Get yourself a timer and set it to 2 hours.
-- Complete the tasks 1 & 2, zip the code and send it to `jannis.gebauer@jupus.de`.
+- Complete the tasks, zip the code and send it to `jannis.gebauer@jupus.de`.
 - We will follow up with you to make an appointment for a code review. This is where we
 discuss your implementation.
 
@@ -98,7 +98,7 @@ a way to reset their passwords?
 - Implement all the views you need to accomplish this task and then add a link to the login
 page for users to reset their password.
 
-#### Follow up
+### Follow up
 *Note: Do this after you've completed all the tasks above and have submitted your results. 
 This is not a part of the 2 hours tasks. Take it as a preparation for the followup call.* 
 
