@@ -1,0 +1,75 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>{% block title %}{% endblock %} - Jupus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="icon" href="{% static "favicon.ico" %}" type="image/x-icon"/>
+  <link rel="shortcut icon" href="{% static "favicon.ico" %}" type="image/x-icon"/>
+  <meta name="description" content="{% block meta_descr %}{% endblock %}"/>
+  <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet"/>
+</head>
+<body>
+{% block body %}
+  {% block header %}
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">Add some information about the album below, the
+                author,
+                or any other background context. Make it a few sentences long so folks can
+                pick up some informative tidbits. Then, link them off to some social
+                networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="{% url "home" %}" class="navbar-brand d-flex align-items-center">
+            <strong>JUPUS</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+  {% endblock %}
+  {% block main %}
+    <main>
+
+      {% block content %}
+
+      {% endblock %}
+
+    </main>
+  {% endblock %}
+  {% block footer %}
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">Here comes some catchy footer content</p>
+      </div>
+    </footer>
+  {% endblock %}
+{% endblock %}
+<script src="{% static "js/bootstrap.min.js" %}"></script>
+<script src="{% static "js/vue.js" %}"></script>
+<script src="{% static "js/axios.js" %}"></script>
+{% block js %}{% endblock %}
+</body>
+</html>

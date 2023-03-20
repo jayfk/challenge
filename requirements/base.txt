@@ -1,0 +1,15 @@
+psycopg2==2.9.3
+django==4.0.2
+celery==5.1.2
+django-cryptography==1.0
+django-environ==0.8.1
+whitenoise==6.0.0
+boto3==1.24.52
+redis==4.4.1
+hiredis==2.1.0
+mozilla-django-oidc==3.0.0
+shortuuid==1.0.11
+python-keycloak==2.8.0
+Pillow==9.4.0
+weasyprint==57.2
+requests-toolbelt==0.9.1
