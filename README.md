@@ -44,7 +44,7 @@ To get up and running, you'll first need to build the stack and start the databa
 ```shell
 cd jupus-coding-challenge
 docker-compose build
-docker-compose up -d postgres
+docker-compose up -d db
 ```
 
 Give the database a couple of seconds to initialize, then do the initial migrations by 
